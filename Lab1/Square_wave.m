@@ -2,10 +2,10 @@
 function [Wave , T] = Square_wave(upper , lower , F , percent , length , Fs)
  % Initializing
  Period = 1/F;
- size = length / Period;
+ sample_point = length * Fs;
  % Return value Initializing
- Wave = 1 : size*F;
- T = 1 : size*F;
+ Wave = 1 : sample_point;
+ T = 1 : sample_point;
  
  % check the frequency
  if(F > (Fs/2))
@@ -24,8 +24,8 @@ function [Wave , T] = Square_wave(upper , lower , F , percent , length , Fs)
  end
  
  % Start calculating
- for i = 1 : size*F
-  if(mod(i,size) <= size*percent)
+ for i = 1 : sample_point
+  if(mod(i,F) <= F*percent)
     Wave(i) = upper;
   else
     Wave(i) = lower;
