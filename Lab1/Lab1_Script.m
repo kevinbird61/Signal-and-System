@@ -10,6 +10,6 @@ Fs = 44100;
 [Wave , T] = Square_wave(upper , lower , F , percent , length , Fs);
 
 plot(T , Wave);
-axis([0 length*Fs 2*lower 2*upper]);
+axis([0 length 2*lower 2*upper]);
 
 sound(Wave , Fs);
