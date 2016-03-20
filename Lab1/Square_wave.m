@@ -1,11 +1,11 @@
 % Program based on "octave".
 function [Wave , T] = Square_wave(upper , lower , F , percent , length , Fs)
  % Initializing
- Period = 1/Fs;
+ Period = 1/F;
  sample_point = length * Fs;
  % Return value Initializing
- Wave = 1 : sample_point;
- T = 1 : sample_point;
+ Wave = zeros(1 , sample_point);
+ T = 0:1/Fs:length;
  
  % check the frequency
  if(F > (Fs/2))
@@ -24,13 +24,14 @@ function [Wave , T] = Square_wave(upper , lower , F , percent , length , Fs)
  end
  
  % Start calculating
- for i = 1 : sample_point
-  if(mod(i,F) <= F*percent)
+ DutyCycle = Period * percent;
+ 
+ for i = 1 : sample_point+1
+  if(mod(T(i),Period) <= DutyCycle)
     Wave(i) = upper;
   else
     Wave(i) = lower;
   end
-  T(i) = i*Period;
  end
  
  return;

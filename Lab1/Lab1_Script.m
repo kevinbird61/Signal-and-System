@@ -12,4 +12,4 @@ Fs = 44100;
 plot(T , Wave);
 axis([0 length 2*lower 2*upper]);
 
-sound(Wave , Fs);
+% sound(Wave , Fs);
