@@ -11,3 +11,10 @@ Lab2 image:
 ![alt text][figure]
 
 [figure]:https://github.com/kevinbird61/Signal-and-System/blob/master/Lab2/Plot.png
+
+Lab3 image:
+![alt text][figure]
+
+[figure]:https://github.com/kevinbird61/Signal-and-System/blob/master/Lab3/Lab3_result.png
+
+
