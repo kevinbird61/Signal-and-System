@@ -8,13 +8,13 @@ Show the practice after class.
 Show the homework and some experiment
 
 Lab2 image:
-![alt text][figure]
+![alt text][figure_lab2]
 
-[figure]:https://github.com/kevinbird61/Signal-and-System/blob/master/Lab2/Plot.png
+[figure_lab2]:https://github.com/kevinbird61/Signal-and-System/blob/master/Lab2/Plot.png
 
 Lab3 image:
-![alt text][figure]
+![alt text][figure_lab3]
 
-[figure]:https://github.com/kevinbird61/Signal-and-System/blob/master/Lab3/Lab3_result.png
+[figure_lab3]:https://github.com/kevinbird61/Signal-and-System/blob/master/Lab3/Lab3_result.png
 
 
