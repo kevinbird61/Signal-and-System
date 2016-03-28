@@ -6,6 +6,13 @@ Show the practice after class.
 
 ## "Lab"
 Show the homework and some experiment
+###### Lab1
+Implement "Square Wave".
+###### Lab2
+Implement RC circuit with Lab1.
+###### Lab3
+Implement Convolution , take a deeper look in lab2.
+
 
 Lab2 image:
 ![alt text][figure_lab2]
