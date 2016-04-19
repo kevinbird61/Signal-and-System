@@ -42,6 +42,7 @@ while(1)
        title('Contrast Wave');
        xlabel('Time');
        ylabel('sin(x)');
+       sound(Wave_sum , Fs);
        pause(1);
     end
 end
