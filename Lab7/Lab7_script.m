@@ -11,11 +11,18 @@ for i = 1 : 3
     Poles = tf([1] , [(Kd(i)+1) (Kp(i)-2) Ki(i)]);
     sys = feedback(series(Zeros,Poles),1);
     t = 0:0.001:100;
-    step(sys,t);
+    if i == 1
+        step(sys,t , 'blue');
+    elseif i == 2
+        step(sys,t , 'green');
+    elseif i == 3
+        step(sys,t , 'red');
+    end
     hold on;
     grid on;
 end
-title('PID controller');
+legend('Blue for PID controller','Green for PI controller','Red for P controller');
+title('PID controller with G(s) = 1/(s-2)');
 
 % Change G(s) from 1/(s-2) to 1/(s+1)^2
 subplot(2,1,2);
@@ -25,8 +32,15 @@ for i = 1 : 3
     Poles = tf([1 2 1 0] , [1 (Kd(i)+2) (Kp(i)+1) Ki(i)]);
     sys = feedback(series(Zeros,Poles),1);
     t = 0:0.001:100;
-    step(sys,t);
+    if i == 1
+        step(sys,t , 'blue');
+    elseif i == 2
+        step(sys,t , 'green');
+    elseif i == 3
+        step(sys,t , 'red');
+    end
     hold on;
     grid on;
 end
-title('PID controller');
+legend('Blue for PID controller','Green for PI controller','Red for P controller');
+title('PID controller with G(s) = 1/(s+1)^2');
