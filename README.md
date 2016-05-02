@@ -19,6 +19,13 @@ Implement the RLC circuit.
 Implement the Beat frequency.
 ###### Lab6
 Implement the ADSR generator to transform a cosine wave into piano sound.
+###### Lab7
+Implement PID controller.
+
+1. Why "s" need to be negative? Ans: because if s is positive , the whole system will grow and reach to infinite. And this system comes to become unstable.
+
+2. [P.S.] "s" need to be pass through inverted Laplace transform , the "s" value will become exponential coef.
+
 
 Lab2 image:
 ![alt text][figure_lab2]
