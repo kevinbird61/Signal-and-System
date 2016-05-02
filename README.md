@@ -26,6 +26,7 @@ Implement PID controller.
 
 2. [P.S.] "s" need to be pass through inverted Laplace transform , the "s" value will become exponential coef.
 
+## Image Show
 
 Lab2 image:
 ![alt text][figure_lab2]
