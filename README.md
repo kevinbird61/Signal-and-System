@@ -26,6 +26,14 @@ Implement PID controller.
 
 2. [P.S.] "s" need to be pass through inverted Laplace transform , the "s" value will become exponential coef.
 
+###### Lab8
+Implement Harmonic Distortion for common sin wave and guitar sound.
+###### Lab9
+Implement Fourier Series on the source wave to get the original wave.
+ - We only need a complete cycle of original wave , and then we can generate the whole original wave.
+###### Lab10
+Implement Lab9's Fourier Series and Lab6's ADSR generation on C and G tone sound wave.
+
 ## Image Show
 
 Lab2 image:
